@@ -1,5 +1,7 @@
 /* 
-	sort an array containing only 0 and 1 
+	3. Sort 0’s and 1’s: Sort an array containing 0’s and 1’s only.
+
+	
 	Try for O(n)
 
 	1.
@@ -36,8 +38,19 @@ void display (int arr[] , int size )
 
 void sort01 (int array[], int size)
 {
-
-	
+	int count =0;
+	for (int i = 0; i < size; ++i)
+	{
+		if (array[i] == 0)
+			count++;
+	}
+	for (int i = 0; i < size; ++i)
+	{
+		if (i< count)
+			array[i]=0;
+		else
+			array[i]=1;
+	}
 }
 
 
@@ -45,11 +58,12 @@ void sort01 (int array[], int size)
 int main() {
 	
 	// your code here
-	int array[] = {1,2,3,3,4,1,2};
-	int size = 7;
+	int array[] = {1,1,0,1,0,0,1,0,0,1};
+	int size = 10;
 
 	display(array, size);
 	sort01(array, size);
+	display(array, size);
 
 	return 0;
 }

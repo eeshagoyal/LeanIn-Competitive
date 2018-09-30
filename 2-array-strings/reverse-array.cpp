@@ -1,11 +1,11 @@
 /*
-	reverse the elements of an array without using another array
+	1. Reverse the elements of an array without using another array.
 */
 
-#include <iostream>
+#include <bits/stdc++.h> 
 using namespace std;
 
-void display (int arr[] , size)
+void display (int arr[] , int size)
 {
 	for (int i = 0; i < size; ++i)
 		cout<< arr[i];
@@ -22,12 +22,8 @@ int main() {
 	display(array, size);
 
 	int temp_size = size ;
-	for (int i = 0; i < temp_size; ++i,temp_size--)
-	{
-		int temp = array[i];
-		array[i]= array[temp_size-1];
-		array[temp_size-1]=temp;
-	}
+	for (int i = 0; i < temp_size; ++i,temp_size--)	
+		swap(array[i], array[temp_size-1]);
 
 	display(array, size);
 

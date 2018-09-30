@@ -1,5 +1,8 @@
 /*
-	find the unique element. you are given an array of numbers where all the elements appear twice , except one number,find and return that number.
+	2. Find the unique element: 
+	You are given an array of numbers where all the elements appear twice, 
+	except one number, find and return that number.
+	
 
 	n(n-1)/2
 	therefore O(n^2)

@@ -1,21 +1,55 @@
 /* 
-	merge two sorted arrays.
+	5. Merge two sorted arrays.
 */
 
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
 void display (int arr[] , int size )
 {
 	for (int i = 0; i < size; ++i)
-		cout<< arr[i];
+		cout<< arr[i]<<" ";
 	cout<<'\n';
 }
 
 
-void merge (int array[], int size)
+void merge (int array1[], int a1_length, int array2[], int a2_length )
 {
-cout
+	int a_length = a1_length + a2_length;
+	int array[ a_length ];
+	int size = -1;
+
+	for (int i = 0; i < a1_length; ++i)
+	{
+		array[i] = array1[i];
+		size++;
+	}	
+		
+	for (int i = 0; i < a2_length; ++i)
+	{
+		for (int j = 0; j <= size; ++j)
+		{
+			if(array2[i] <= array[j])
+			{
+				for (int k = size; k >= j; --k)
+				{
+					array[k+1] = array[k];
+				}
+				array[j] = array2[i];
+				size++;
+				break;	
+			}
+		}
+	}
+
+	//if elements left in array2 
+	if(size < a_length)
+	{
+		for (int i = 0; i < ; ++i)
+		{
+			
+		}
+	}
 }
 
 
@@ -23,11 +57,15 @@ cout
 int main() {
 	
 	// your code here
-	int array[] = {1,2,3,3,4,1,2};
-	int size = 7;
+	int array1[] = {11,13,15,16,19};
+	int array2[] = {10,12,14,17,20};
 
-	display(array, size);
-	merge(array, size);
+	int a1_length = sizeof(array1)/sizeof(array1[0]);
+	int a2_length = sizeof(array2)/sizeof(array2[0]);
+
+	display(array1, a1_length);
+	display(array2, a2_length);
+	merge( array1, a1_length, array2, a2_length );
 
 	return 0;
 }
