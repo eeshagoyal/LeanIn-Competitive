@@ -14,3 +14,5 @@ session 5 : 23/10/2018 : stacks and queues
 		Assignment 1 - https://www.hackerrank.com/strings-assignment-2018
 
 session 6 : 30/10/2018	: linklists
+
+tets
