@@ -15,4 +15,3 @@ session 5 : 23/10/2018 : stacks and queues
 
 session 6 : 30/10/2018	: linklists
 
-tets
