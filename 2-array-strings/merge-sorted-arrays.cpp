@@ -17,7 +17,7 @@ void merge (int array1[], int a1_length, int array2[], int a2_length )
 {
 	int a_length = a1_length + a2_length;
 	int array[ a_length ];
-	int size = -1;
+	int size = 0;
 
 	for (int i = 0; i < a1_length; ++i)
 	{
@@ -41,15 +41,7 @@ void merge (int array1[], int a1_length, int array2[], int a2_length )
 			}
 		}
 	}
-
-	//if elements left in array2 
-	if(size < a_length)
-	{
-		for (int i = 0; i < ; ++i)
-		{
-			
-		}
-	}
+	display(array,a_length);
 }
 
 
@@ -58,7 +50,7 @@ int main() {
 	
 	// your code here
 	int array1[] = {11,13,15,16,19};
-	int array2[] = {10,12,14,17,20};
+	int array2[] = {8,9,10,12,14,17,20,22,23};
 
 	int a1_length = sizeof(array1)/sizeof(array1[0]);
 	int a2_length = sizeof(array2)/sizeof(array2[0]);
