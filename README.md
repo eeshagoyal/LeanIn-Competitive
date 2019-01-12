@@ -16,3 +16,5 @@ session 5 : 23/10/2018 : stacks and queues
 
 session 6 : 30/10/2018	: linklists
 
+session 7 : 11/01/2019	: dynamic programming
+
