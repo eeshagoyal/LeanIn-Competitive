@@ -9,7 +9,9 @@ session 2 : 25/09/2018 : arrays and strings
 		Assignment 3 - https://www.hackerrank.com/arrays-assignment-2
 
 session 3 : 09/09/2018 : recursion	
- 
+	
+	Assignment 4 - https://www.hackerrank.com/recursion-part-1
+
 session 4 : 09/09/2018 : recursion
 
 session 5 : 23/10/2018 : stacks and queues 
