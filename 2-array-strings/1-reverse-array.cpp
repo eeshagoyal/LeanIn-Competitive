@@ -8,7 +8,7 @@ using namespace std;
 void display (int arr[] , int size)
 {
 	for (int i = 0; i < size; ++i)
-		cout<< arr[i];
+		cout<< arr[i]<<" ";
 	cout<<'\n';
 }
 
@@ -16,8 +16,8 @@ void display (int arr[] , int size)
 int main() {
 	
 	// your code here
-	int array[] = {1,2,3,4,5};
-	int size = 5;
+	int array[] = {1,2,3,4,5,6};
+	int size = sizeof(array)/sizeof(array[0]);
 
 	display(array, size);
 
@@ -26,6 +26,5 @@ int main() {
 		swap(array[i], array[temp_size-1]);
 
 	display(array, size);
-
 	return 0;
 }
