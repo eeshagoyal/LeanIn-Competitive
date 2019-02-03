@@ -11,6 +11,7 @@ session 2 : 25/09/2018 : arrays and strings
 session 3 : 09/09/2018 : recursion	
 	
 	Assignment 4 - https://www.hackerrank.com/recursion-part-1
+	Assignment 5 - https://www.hackerrank.com/recursion-part-2
 
 session 4 : 09/09/2018 : recursion
 
@@ -19,4 +20,3 @@ session 5 : 23/10/2018 : stacks and queues
 session 6 : 30/10/2018	: linklists
 
 session 7 : 11/01/2019	: dynamic programming
-
