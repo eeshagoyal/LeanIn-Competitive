@@ -22,3 +22,7 @@ session 6 : 30/10/2018	: linklists
 session 7 : 11/01/2019	: dynamic programming
 
 session 8 : 07/02/2019  : DP
+
+session 9 : 12/03/2019 : Trees
+
+	Assignment 6 - https://www.hackerrank.com/holi-week-19-first-assignment
